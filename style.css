@@ -1,0 +1,48 @@
+.roboto-normal {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
+/* shared style  */
+
+/* nav  style  */
+.nav-section {
+  max-width: 1140px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-container{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-container ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  font-weight: bold;
+}
+.nav-container ul li a {
+  text-decoration: none;
+  color: black;
+}
+span {
+  color: #8987a1;
+  font-weight: 400;
+}
+.shopping {
+  font-weight: 400;
+  color: black;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+  .nav-container ul {
+    display: none;
+  }
+}
