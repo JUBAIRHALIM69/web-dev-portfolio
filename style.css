@@ -1,9 +1,15 @@
 .roboto-normal {
   font-family: "Roboto", sans-serif;
   font-optical-sizing: auto;
-  font-weight: <weight>;
+  font-weight: 600;
   font-style: normal;
   font-variation-settings: "wdth" 100;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 /* shared style  */
 
@@ -31,7 +37,7 @@
   text-decoration: none;
   color: black;
 }
-span {
+.nav-items {
   color: #8987a1;
   font-weight: 400;
 }
@@ -40,9 +46,96 @@ span {
   color: black;
   text-decoration: none;
 }
+/* main section-01 banner style  */
+.banner-section {
+    max-width: 1140px;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 80px;
+}
+ .banner-section img{
+    width: 100%;
+    max-width: 570px;
+ }
+ .banner-left h1{
+     font-size: 65px;
+     font-weight: bold;
+     margin: 20px 0px;
+ }
+ .banner-left p{
+    margin-top: 0px;
+    color: rgb(106, 105, 105);
+    line-height: 25px;
+ }
+ .fresh{
+    color: #E95A08;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+ }
+
+ /* main section-2  */
+ .plants-section{
+    margin-top: 50px;
+    max-width: 1140px;
+    margin: auto;
+    margin-top: 50px;
+ }
+.plants-container{
+    max-width: 1140px;
+    margin: auto;
+    text-align: center;
+
+}
+.plants-container h1{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10px 0px;
+}
+.plants-container p{
+    color: gray;
+}
+.our{
+    color:#E95A08;
+}
+
+/* card style  */
+.card-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+.card{
+    max-width: 270px;
+    text-align: center;
+   
+
+}
+.card h2{
+    font-weight: 400;
+}
+.btn{
+
+    width: 100%;
+    padding: 1rem;
+    color: white;
+    border: none;
+    background-color: #E95A08;
+     font-weight: 700;
+}
+
+
 
 @media screen and (max-width: 576px) {
   .nav-container ul {
     display: none;
+  }
+  .banner-section{
+    flex-direction: column-reverse;
+  }
+  .card-container{
+    grid-template-columns: repeat(2,1fr);
   }
 }
