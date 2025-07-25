@@ -231,8 +231,40 @@ input {
   padding: 10px 20px;
   font-weight: 700;
 }
+/* footer related style  */
+footer{
+    max-width: 1440px;
+    width: 100%;
+    margin: auto;
+    padding: 50px 160px;
+}
+.footer-container{
+display: flex;
+justify-content: space-between;
+}
+.footer-part-1{
+    color: gray;
+    font-weight: 400;
+}
+.footer-part-2 ul li a{
+    text-decoration: none;
+    color: gray;
+    font-weight: 400;
+    line-height: 40px;
+}
+ .footer-part-3 ul li a{
+    text-decoration: none;
+    color: gray;
+    line-height: 40px;
+    font-weight: 400;
+ }
+ .footer-part-4 figure{
+    display: flex;
+    gap: 30px;
 
-@media screen and (max-width: 576px) {
+ }
+
+@media screen and (min-width: 576px) and (max-width: 768px)  {
   .nav-container ul {
     display: none;
   }
@@ -243,7 +275,7 @@ input {
     grid-template-columns: repeat(2, 1fr);
   }
   .join-section {
-    padding: 50px 20px;
+    padding: 100px 20px;
   }
   .join-section h1{
     font-size: 32px;
@@ -258,5 +290,9 @@ input {
     width: 25%;
     padding: 10px;
     font-size: 15px;
+  }
+  .footer-container{
+    width: 100%;
+    flex-direction: column;
   }
 }
